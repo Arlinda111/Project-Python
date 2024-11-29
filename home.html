@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 24px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select, input[type="number"], input[type="submit"] {
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <ge">Age:</label>
+            <input type="nudiv class="container">
+        <h1>Heart Disease Prediction</h1>
+        <form method="POST" action="/">
+            <label for="amber" id="age" name="mosha" required><br><br>
+
+            <label for="hypertension">Hypertension:</label>
+            <select id="hypertension" name="hipertension" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br><br>
+
+            <label for="heart_disease">Heart Disease:</label>
+            <select id="heart_disease" name="semundje_zemre" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br><br>
+
+            <input type="submit" value="Predict">
+        </form>
+
+        {% if prediction %}
+            <h3>Prediction: {{ prediction }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
